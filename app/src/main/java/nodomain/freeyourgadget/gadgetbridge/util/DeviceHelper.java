@@ -64,6 +64,7 @@ import nodomain.freeyourgadget.gadgetbridge.devices.liveview.LiveviewCoordinator
 import nodomain.freeyourgadget.gadgetbridge.devices.miband.MiBandConst;
 import nodomain.freeyourgadget.gadgetbridge.devices.miband.MiBandCoordinator;
 import nodomain.freeyourgadget.gadgetbridge.devices.mijia_lywsd02.MijiaLywsd02Coordinator;
+import nodomain.freeyourgadget.gadgetbridge.devices.mijia_quartz_watch.MijiaQuartzWatchDeviceCoordinator;
 import nodomain.freeyourgadget.gadgetbridge.devices.miscale2.MiScale2DeviceCoordinator;
 import nodomain.freeyourgadget.gadgetbridge.devices.no1f1.No1F1Coordinator;
 import nodomain.freeyourgadget.gadgetbridge.devices.pebble.PebbleCoordinator;
@@ -216,6 +217,7 @@ public class DeviceHelper {
         result.add(new MiBand2HRXCoordinator());
         result.add(new MiBand2Coordinator()); // Note: MiBand2 and all of the above  must come before MiBand because detection is hacky, atm
         result.add(new MiBandCoordinator());
+        result.add(new MijiaQuartzWatchDeviceCoordinator());
         result.add(new PebbleCoordinator());
         result.add(new VibratissimoCoordinator());
         result.add(new LiveviewCoordinator());
